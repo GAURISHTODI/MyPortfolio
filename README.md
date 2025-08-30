@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+# 🌐 Gaurish Todi - Portfolio  
 
-## Project info
+A modern, responsive **portfolio website** built with **React + Vite** showcasing my journey as a Computer Science Engineer, projects, skills, and ways to connect with me.  
 
-**URL**: https://lovable.dev/projects/b17da038-a020-4e85-918d-066bc78c1b1d
+## 🚀 Features  
+- ⚡ Fast & optimized with **Vite**  
+- 🎨 Responsive UI for all devices  
+- 📂 Sections: Home, Resume, Skills, Projects, Blogs  
+- 📬 Contact form with message support  
+- 🔗 Easy access to GitHub, LinkedIn, and Email  
 
-## How can I edit this code?
+## 🛠️ Tech Stack  
+- **Frontend:** React, Vite, TailwindCSS  
+- **Deployment:** Netlify / Vercel / GitHub Pages  
 
-There are several ways of editing your application.
+## 📸 Preview  
+Here are some previews of the portfolio:  
 
-**Use Lovable**
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/a.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/b.png" width="45%" />
+</p>  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b17da038-a020-4e85-918d-066bc78c1b1d) and start prompting.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/c.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/d.png" width="45%" />
+</p>  
 
-Changes made via Lovable will be committed automatically to this repo.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/e.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/f.png" width="45%" />
+</p>  
 
-**Use your preferred IDE**
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/g.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/h.png" width="45%" />
+</p>  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GAURISHTODI/MyPortfolio/main/public/screenshots/i.png" width="90%" />
+</p>  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📂 Getting Started  
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/GAURISHTODI/portfolio.git  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate into the project
+cd portfolio  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install  
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Run the development server
+npm run dev  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b17da038-a020-4e85-918d-066bc78c1b1d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Build for production
+npm run build  
