@@ -1,14 +1,15 @@
-// api/blogs.js
+// api/blogs.js (Corrected Version)
+
 const express = require('express');
 const path = require('path');
 const fs = require('fs').promises;
 const matter = require('gray-matter');
 const { marked } = require('marked');
 
-const app = express();
-app.use(express.json());
+const router = express.Router(); // 1. Use Router instead of app
 
-const postsDirectory = path.join(process.cwd(), '_posts');
+// 2. Fix the path to look for '_posts' inside the 'api' folder
+const postsDirectory = path.join(__dirname, '_posts');
 
 async function getAllPosts() {
     const fileNames = await fs.readdir(postsDirectory);
@@ -30,7 +31,8 @@ async function getPostBySlug(slug) {
     return { slug, content: htmlContent, ...data };
 }
 
-app.get('/api/blogs', async (req, res) => {
+// 3. The route is now just '/blogs' because '/api' is handled in server.js
+router.get('/blogs', async (req, res) => {
     try {
         const { slug } = req.query;
         if (slug) {
@@ -41,8 +43,9 @@ app.get('/api/blogs', async (req, res) => {
             res.status(200).json(posts);
         }
     } catch (error) {
+        console.error('Error in /api/blogs:', error); // Added for better debugging
         res.status(500).json({ error: 'Failed to load blog posts.' });
     }
 });
 
-module.exports = app;
+module.exports = router; // 4. Export the router
