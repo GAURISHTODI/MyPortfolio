@@ -3,14 +3,61 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
-  const contactInfo = [
+  // State to hold the data from the form fields
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+ const [status, setStatus] = useState('');
+ 
+   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('sending'); // Update status to show a "sending" message
+
+    try {
+      // Send the form data to our backend API endpoint
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        // Clear the form fields after a successful submission
+        setFormData({ name: '', email: '', subject: '', message: '' }); 
+      } else {
+        // Handle server-side errors
+        setStatus('error');
+      }
+    } catch (error) {
+      // Handle network or other unexpected errors
+      console.error('Submission error:', error);
+      setStatus('error');
+    }
+  };
+
+   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "gaurish.todi@example.com",
-      href: "mailto:gaurish.todi@example.com"
+      value: "gaurishtodi@gmail.com",
+      href: "mailto:gaurishtodi@gmail.com"
     },
     {
       icon: Phone,
@@ -26,6 +73,7 @@ const Contact = () => {
     }
   ];
 
+  
   const socialLinks = [
     {
       icon: Github,

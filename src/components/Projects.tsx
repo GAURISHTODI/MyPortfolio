@@ -86,7 +86,7 @@ const Projects = () => {
                     className="border-gray-300 bg-white hover:bg-gray-50 flex-1 text-black"
                     asChild
                   >
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/GAURISHTODI" target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-2" />
                       Code
                     </a>
@@ -112,7 +112,7 @@ const Projects = () => {
               className="bg-black text-white hover:bg-gray-800 hover:shadow-lg transition-all duration-300 px-8 py-3 text-lg font-semibold"
               asChild
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/GAURISHTODI" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2" />
                 View All Projects
               </a>

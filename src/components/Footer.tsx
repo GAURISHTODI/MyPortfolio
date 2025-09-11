@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Center: Social Links */}
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/GAURISHTODI" 
               target="_blank" 
               rel="noopener noreferrer"
               className="glass-card p-3 hover:shadow-accent smooth-transition hover:scale-110"
@@ -27,7 +27,7 @@ const Footer = () => {
               <Github className="h-5 w-5 text-foreground" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/gaurish-todi-89745229b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX6iMGj%2FkSDaFFuC0ggdCtQ%3D%3D" 
               target="_blank" 
               rel="noopener noreferrer"
               className="glass-card p-3 hover:shadow-accent smooth-transition hover:scale-110"
@@ -35,7 +35,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5 text-foreground" />
             </a>
             <a 
-              href="mailto:gaurish.todi@example.com"
+              href="mailto:gaurishtodi@gmail.com"
               className="glass-card p-3 hover:shadow-accent smooth-transition hover:scale-110"
             >
               <Mail className="h-5 w-5 text-foreground" />
