@@ -1,14 +1,13 @@
-// api/blogs.js (Corrected Version)
-
 const express = require('express');
 const path = require('path');
 const fs = require('fs').promises;
 const matter = require('gray-matter');
 const { marked } = require('marked');
+const cors = require('cors');
 
-const router = express.Router(); // 1. Use Router instead of app
+const app = express();
+app.use(cors());
 
-// 2. Fix the path to look for '_posts' inside the 'api' folder
 const postsDirectory = path.join(__dirname, '_posts');
 
 async function getAllPosts() {
@@ -20,9 +19,8 @@ async function getAllPosts() {
         const matterResult = matter(fileContents);
         return { slug, ...matterResult.data };
     }));
-    return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
+    return allPostsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 }
-
 async function getPostBySlug(slug) {
     const fullPath = path.join(postsDirectory, `${slug}.md`);
     const fileContents = await fs.readFile(fullPath, 'utf8');
@@ -31,21 +29,20 @@ async function getPostBySlug(slug) {
     return { slug, content: htmlContent, ...data };
 }
 
-// 3. The route is now just '/blogs' because '/api' is handled in server.js
-router.get('/blogs', async (req, res) => {
+// FIX: Use the full, original path
+app.get('/api/blogs', async (req, res) => {
     try {
         const { slug } = req.query;
         if (slug) {
             const post = await getPostBySlug(slug);
-            res.status(200).json(post);
+            return res.status(200).json(post);
         } else {
             const posts = await getAllPosts();
-            res.status(200).json(posts);
+            return res.status(200).json(posts);
         }
     } catch (error) {
-        console.error('Error in /api/blogs:', error); // Added for better debugging
-        res.status(500).json({ error: 'Failed to load blog posts.' });
+        return res.status(500).json({ error: 'Failed to load blog posts.' });
     }
 });
 
-module.exports = router; // 4. Export the router
+module.exports = app;

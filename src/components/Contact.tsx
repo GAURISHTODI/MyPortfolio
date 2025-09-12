@@ -13,6 +13,7 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  
 
   // State to manage the submission status (e.g., sending, success, error)
   const [status, setStatus] = useState('');
