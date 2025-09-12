@@ -1,4 +1,4 @@
-# 🚀 Elite Full-Stack Developer Portfolio (Vite + Express Edition)
+# 🚀Gaurish- portfolio
 
 Welcome to the definitive README for a high-performance, decoupled full-stack portfolio. This project is engineered with a lightning-fast **Vite + React** frontend and a robust **Node.js + Express** backend. It's designed for a professional, scalable developer experience and optimized for deployment on Vercel with a heavy focus on SEO and performance.
 
