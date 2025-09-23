@@ -25,20 +25,18 @@ const Hero = () => {
         {/* Description - merged from About section */}
         <div className="space-y-4 mb-8 max-w-3xl mx-auto text-center">
           <p className="text-base sm:text-lg text-black font-extralight leading-relaxed">
-            Passionate full-stack developer specializing in modern web technologies and scalable backend systems. 
-            Currently building cross-platform mobile applications and exploring microservices architecture.
+            Passionate Full-Stack Developer with expertise in modern technologies and scalable backend systems. Currently focused on building cross-platform mobile applications, while exploring microservices architecture and broadening knowledge across diverse related technologies.
           </p>
           
           <p className="text-sm sm:text-base text-gray-700 font-extralight leading-relaxed">
             3rd year Computer Science Engineering student at VIT Vellore with hands-on experience in React Native, Spring Boot, 
             and cloud technologies. Solved 300+ DSA problems and built production-ready applications including Trekio 
-            (AI-powered trip planner) and RailServe (railway management system). Experienced with Kong API Gateway, 
-            RabbitMQ, Redis, and containerization technologies.
+            (AI-powered trip planner) and RailServe (railway management system). Learning and experiencing using tools including Kong API Gateway, 
+            RabbitMQ, Redis, and containerization technologies like Docker and Kubernetes.
           </p>
           
           <p className="text-sm sm:text-base text-gray-700 font-extralight leading-relaxed">
-            Strong foundation in enterprise development patterns, microservices architecture, and modern DevOps practices. 
-            Passionate about creating user-centric solutions that make a meaningful impact.
+            Strong foundation in enterprise development patterns, microservices architecture, mobile app development.
           </p>
         </div>
         
