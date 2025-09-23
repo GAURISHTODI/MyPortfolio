@@ -30,8 +30,7 @@ const Hero = () => {
           
           <p className="text-sm sm:text-base text-gray-700 font-extralight leading-relaxed">
             3rd year Computer Science Engineering student at VIT Vellore with hands-on experience in React Native, Spring Boot, 
-            and cloud technologies. Solved 300+ DSA problems and built production-ready applications including Trekio 
-            (AI-powered trip planner) and RailServe (railway management system). Learning and experiencing using tools including Kong API Gateway, 
+            and cloud technologies. Solved 300+ DSA problems to enhance problem solving abilities. Learning and experiencing using tools including Kong API Gateway, 
             RabbitMQ, Redis, and containerization technologies like Docker and Kubernetes.
           </p>
           
