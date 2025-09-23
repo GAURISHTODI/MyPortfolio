@@ -24,7 +24,7 @@ const Resume = () => {
               <Button 
                 size="lg" 
                 className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-lg font-bold"
-                onClick={() => window.open('https://drive.google.com/file/d/1e987krv3NWS9m3yPWp2CWDgHrqjxUN3r/view?usp=sharing', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/136fSWCZghBMIWeDaaN2fiJNy4UHFz5nb/view?usp=sharing', '_blank')}
               >
                 View Resume
                 <ExternalLink className="ml-2 h-5 w-5" />
