@@ -1,6 +1,6 @@
 # 🚀Gaurish- portfolio
 
-Welcome to the definitive README for a high-performance, decoupled full-stack portfolio. This project is engineered with a lightning-fast **Vite + React** frontend and a robust **Node.js + Express** backend. It's designed for a professional, scalable developer experience and optimized for deployment on Vercel with a heavy focus on SEO and performance.
+Welcome to the definitive README for a high-performance, decoupled full-stack live portfolio. This project is engineered with a lightning-fast **Vite + React** frontend and a robust **Node.js + Express** backend. It's designed for a professional, scalable developer experience and optimized for deployment on Vercel with a heavy focus on SEO and performance.
 
 **[Live Demo](https://gaurish-todi.vercel.app/) | [My LinkedIn](https://www.linkedin.com/in/gaurish-todi-89745229b/)**
 
